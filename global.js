@@ -34,8 +34,8 @@ export async function fetchGitHubData(username) {
 }
 
 // Step 3: Dynamic navigation
-const BASE_PATH = (location.hostname === 'localhost' || location.hostname === '127.0.0.1')
-    ? ''
+export const BASE_PATH = (location.hostname === 'localhost' || location.hostname === '127.0.0.1')
+    ? '/lab1-dsc106'
     : '/lab1-dsc106';
 
 const pages = [
