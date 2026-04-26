@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Portfolio Website",
+    "year": 2026,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A personal portfolio site built with semantic HTML and modern CSS as part of DSC 106."
+  },
+  {
+    "title": "Advanced CSS Styling",
+    "year": 2026,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Responsive and accessible web design using CSS Grid, Flexbox, and custom properties."
+  },
+  {
+    "title": "JavaScript Interactions",
+    "year": 2026,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Dynamic web interactions including dark mode switching, auto-generated navigation, and localStorage persistence."
+  },
+  {
+    "title": "Data-Driven Projects Page",
+    "year": 2026,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Projects page dynamically rendered from a JSON data file using JavaScript fetch and DOM manipulation."
+  },
+  {
+    "title": "SoleSavings",
+    "year": 2024,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A full-stack sneaker price tracking platform using Python, Flask, and SQLite, aggregating listings across multiple resale and retail marketplaces."
+  },
+  {
+    "title": "MNMIZE – Achieving Zero Carbon Homes",
+    "year": 2023,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A web application that calculates and tracks real-time CO₂e from plastic consumption of households, with a dashboard for tracking over time."
+  },
+  {
+    "title": "Customer Targeting Model",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Identified high-value prospective customers for merchants using FAISS vector similarity search based on existing customer behavior and transaction patterns."
+  },
+  {
+    "title": "SME Cashflow Prediction Model",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Forecasted SME cashflows using historical financial data, leveraging Meta's Prophet time-series forecasting library."
+  },
+  {
+    "title": "Document OCR Pipeline",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "OCR pipelines for legal and immigration forms using Google Cloud Document AI, achieving 90%+ field-level accuracy across 6 document types."
+  },
+  {
+    "title": "Document Identification Service",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "AI-powered document classification service using Claude LLM to label diverse legal documents across 10+ US visa types."
+  },
+  {
+    "title": "DataHacks 2025",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Directed UCSD's largest hackathon with 250+ participants, managing a $12,000 budget, corporate sponsorships, and cross-functional team coordination."
+  },
+  {
+    "title": "Data Monetization Platform",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Designed data insight KPIs for a bank's Data-as-a-Service initiative, enabling merchants and SMEs to leverage transaction data."
+  }
+]
