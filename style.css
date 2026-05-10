@@ -8,9 +8,6 @@ html {
 }
 
 body {
-  /* Set line height to 1.5 times the font size
-	   and use the OS's UI font as the website font
-	 */
   font: 100%/1.5 system-ui;
   max-width: 100ch;
   margin-inline: max(1em, (100% - 100ch) / 2);
@@ -95,7 +92,6 @@ h2 {
   margin: 0;
 }
 
-/* Resume / CV */
 .cv-header {
   text-align: center;
   margin-bottom: 1em;
@@ -182,7 +178,6 @@ nav a:hover {
   gap: 0.5em;
 }
 
-/* Search bar */
 .searchBar {
   display: block;
   width: 100%;
@@ -192,7 +187,6 @@ nav a:hover {
   box-sizing: border-box;
 }
 
-/* Pie chart + legend layout */
 .chart-container {
   display: flex;
   gap: 2em;
@@ -214,7 +208,6 @@ nav a:hover {
   opacity: 0.5;
 }
 
-/* Legend */
 .legend {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
@@ -241,7 +234,6 @@ nav a:hover {
   flex-shrink: 0;
 }
 
-/* Selected state */
 .selected {
   --color: oklch(60% 45% 0) !important;
 }
@@ -252,4 +244,88 @@ path.selected {
 
 li.selected {
   background-color: var(--color);
+}
+
+dl.stats {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1em;
+}
+
+dl.stats dt {
+  font-weight: bold;
+  color: color-mix(in oklch, currentColor 60%, transparent);
+  margin: 0;
+}
+
+dl.stats dd {
+  margin: 0;
+}
+
+.gridlines {
+  stroke: #e0e0e0;
+  stroke-opacity: 0.3;
+}
+
+dl.info {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.5em;
+  transition-duration: 500ms;
+  transition-property: opacity, visibility;
+}
+
+dl.info dt {
+  font-weight: bold;
+  color: color-mix(in oklch, currentColor 60%, transparent);
+  margin: 0;
+  font-size: 0.9em;
+}
+
+dl.info dd {
+  margin: 0;
+}
+
+.tooltip {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  background-color: canvas;
+  padding: 1em;
+  border-radius: 0.5em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.tooltip[hidden]:not(:hover, :focus-within) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+circle:hover {
+  transform: scale(1.5);
+}
+
+circle.selected {
+  fill: #ff6b6b;
+}
+
+@keyframes marching-ants {
+  to {
+    stroke-dashoffset: -8;
+  }
+}
+
+.selection {
+  fill-opacity: 0.1;
+  stroke: black;
+  stroke-opacity: 0.7;
+  stroke-dasharray: 5 3;
+  animation: marching-ants 2s linear infinite;
 }

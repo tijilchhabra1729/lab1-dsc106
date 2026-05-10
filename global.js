@@ -34,7 +34,6 @@ export async function fetchGitHubData(username) {
     return fetchJSON(`https://api.github.com/users/${username}`);
 }
 
-// Step 3: Dynamic navigation
 export const BASE_PATH = (location.hostname === 'localhost' || location.hostname === '127.0.0.1')
     ? '/lab1-dsc106'
     : '/lab1-dsc106';
@@ -44,6 +43,7 @@ const pages = [
     { url: 'projects/index.html', title: 'Projects' },
     { url: 'contact/index.html', title: 'Contact' },
     { url: 'resume.html', title: 'Resume' },
+    { url: 'meta/index.html', title: 'Meta' },
     { url: 'https://github.com/tijilchhabra1729', title: 'GitHub' },
 ];
 
@@ -67,7 +67,6 @@ for (const page of pages) {
     nav.append(a);
 }
 
-// Step 4.2-4.3: Theme switcher
 const label = document.createElement('label');
 label.className = 'color-scheme';
 label.textContent = 'Color Scheme: ';
@@ -82,7 +81,6 @@ for (const [value, text] of [['light dark', 'Automatic'], ['light', 'Light'], ['
 label.append(select);
 document.body.append(label);
 
-// Step 4.4-4.5: Event handler + persistence
 function setColorScheme(scheme) {
     document.documentElement.style.setProperty('color-scheme', scheme);
     select.value = scheme;
@@ -98,7 +96,6 @@ if (savedScheme) {
     setColorScheme(savedScheme);
 }
 
-// Step 5: Contact form interception
 const form = document.querySelector('form');
 if (form) {
     form.addEventListener('submit', (e) => {
